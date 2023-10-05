@@ -40,3 +40,6 @@ jobs:
 
       - name: "Run tests"
         run: "pytest -v"
+      
+      - name: "Sytle tests"
+        run: "yapf -d --recursive deepforest/ --style=.style.yapf 2>&1"
